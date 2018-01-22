@@ -7,6 +7,7 @@ const defaultState = { checked: false };
 const reducer = (state = defaultState, action) => {
     switch (action.type) {
         case 'TOGGLE':
+            console.log('Toggle action dispatched!');
             return { ...state, checked: !state.checked };
         default:
             break;
